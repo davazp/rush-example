@@ -18,6 +18,7 @@
    */
   "rushVersion": "5.9.1",
 
+
   /**
    * The next field selects which package manager should be installed and determines its version.
    * Rush installs its own local copy of the package manager to ensure that your build process
@@ -26,10 +27,9 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "2.15.1",
-
+  // "pnpmVersion": "2.15.1",
   // "npmVersion": "4.5.0",
-  // "yarnVersion": "1.9.4",
+  "yarnVersion": "1.17.0",
 
   /**
    * Options that are only used when the PNPM package manager is selected
@@ -69,7 +69,7 @@
    * Specify a SemVer range to ensure developers use a NodeJS version that is appropriate
    * for your repo.
    */
-  "nodeSupportedVersionRange": ">=10.13.0 <11.0.0",
+  "nodeSupportedVersionRange": ">=10.13.0",
 
   /**
    * If you would like the version specifiers for your dependencies to be consistent, then
@@ -160,12 +160,12 @@
      * They are case-insensitive anchored JavaScript RegExps.  Example: ".*@example\.com"
      *
      * IMPORTANT: Because these are regular expressions encoded as JSON string literals,
-     * RegExp escapes need two backspashes, and ordinary periods should be "\\.".
+      * RegExp escapes need two backspashes, and ordinary periods should be "\\.".
      */
-    "allowedEmailRegExps": [
-      "[^@]+@users\\.noreply\\.github\\.com",
-      "travis@example\\.org"
-    ],
+    // "allowedEmailRegExps": [
+    //   "[^@]+@users\\.noreply\\.github\\.com",
+    //   "travis@example\\.org"
+    // ],
 
     /**
      * When Rush reports that the address is malformed, the notice can include an example
